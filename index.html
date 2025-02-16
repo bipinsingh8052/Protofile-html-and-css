@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                Bipin <span>Singh</span>
+            </a>
+            <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">Project</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--  -->
+
+
+    <section class="hero-section d-flex flex-column flex-md-row align-items-center justify-content-center text-white p-5">
+        <!-- Left Side - Profile Image -->
+        <div class="position-relative text-center text-md-start mb-4 mb-md-0">
+            <div class="orange-circle animate__animated animate__zoomIn"></div>
+            <img src="dp.jpg" alt="Profile" class="profile-img animate__animated animate__fadeInLeft">
+        </div>
+
+        <!-- Right Side - Introduction -->
+        <div class="ms-md-5 text-center text-md-start">
+            <p class="text-uppercase text-secondary animate__animated animate__fadeInDown">Introduction</p>
+            <h1 class="fw-bold animate__animated animate__fadeInRight">
+                Hi, I'm <span class="text-warning">Bipin Singh</span>
+            </h1>
+            <h3 id="role-text" class="fw-bold text-danger"></h3>
+            <p class="text-light mt-3 animate__animated animate__fadeInUp animate__delay-1s">
+                Experienced Full Stack Web Developer proficient in front-end and back-end
+                technologies. Skilled in creating responsive, user-friendly interfaces and
+                developing robust server-side logic.
+            </p>
+
+            <!-- Animated Button -->
+            <a href="https://drive.google.com/file/d/17KV-ppUlZDjmhP5RGL1kdU2fx47g31C6/view?usp=drive_link" download="My_CV.pdf" class="btn btn-warning fw-bold animate__animated animate__bounceIn animate__delay-3s">
+                Download CV
+            </a>
+        </div>
+    </section>
+
+    <!--  -->
+    <!--  -->
+      <!-- About Section -->
+      <section class="about-section" id="about">
+        <h2 class="title">About <span class="highlight">Me</span></h2>
+        <div class="about-container">
+            <!-- Image Section -->
+            <div class="image-container">
+                <img src="https://mine-portfolio-olive.vercel.app/images/aboutmeimg.png" alt="About Me">
+            </div>
+
+            <!-- Info Section -->
+            <div class="info-container">
+                <h3>PERSONAL INFO:</h3>
+                <p><strong>First Name:</strong> Bipin <strong>Last Name:</strong> Singh</p>
+                <p><strong>Birthdate:</strong> 04 August 2004</p>
+                <p><strong>Nationality:</strong> Indian</p>
+                <p><strong>Experience:</strong> Fresher</p>
+                <p><strong>Freelance:</strong> Available</p>
+                <p><strong>Language:</strong> English</p>
+                <p><strong>Phone:</strong> +91 8052056711</p>
+                <p><strong>Email:</strong> bipinsingh8052@gmail.com</p>
+                <p><strong>Address:</strong> Allahabad, Uttar Pradesh</p>
+
+                <!-- Hire Me Button -->
+                <button class="hire-me" onclick="window.location.href='/contact'">Hire Me</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume-section">
+        <h2 class="text-center">My <span class="highlight">Resume</span></h2>
+        <p class="text-center">Education</p>
+        <div class="container">
+            <div class="row">
+                <!-- Resume Card 1 -->
+                <div class="col-md-4">
+                    <div class="resume-card">
+                        <div class="resume-card-inner">
+                            <div class="resume-card-front">
+                                <h4>Diploma In Front End Web Development</h4>
+                                <p>Cybrom Technology PVT LTD</p>
+                            </div>
+                            <div class="resume-card-back">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis maiores iusto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resume Card 2 -->
+                <div class="col-md-4">
+                    <div class="resume-card">
+                        <div class="resume-card-inner">
+                            <div class="resume-card-front">
+                                <h4>Diploma In Back End Web Development</h4>
+                                <p>Cybrom Technology PVT LTD</p>
+                            </div>
+                            <div class="resume-card-back">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis maiores iusto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resume Card 3 -->
+                <div class="col-md-4">
+                    <div class="resume-card">
+                        <div class="resume-card-inner">
+                            <div class="resume-card-front">
+                                <h4>Degree In B.Sc</h4>
+                                <p>Cybrom Technology PVT LTD</p>
+                            </div>
+                            <div class="resume-card-back">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis maiores iusto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--  -->
+<!--  -->
+
+<section class="blog-section" id="blog">
+    <div class="blog_heading">
+        <h3>Check Out My Latest Blog Posts</h3>
+    <h1>My <span>Blog</span></h1>
+    </div>
+
+    <div class="blog-container">
+        <div class="blog-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCxRGPBFLbLrhozX3PLdnv0i3dMzzDB0rE8Q&s" alt="Blog 1">
+            <div class="blog-content">
+                <h2>The Importance Of Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Facere molestias praesentium...</p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlH5bpyDJaJR7FoLooFnmFVNLTGElLZe-bozGPYYo_O9le7AAnmQCxtXJ7Pohz2lQb3Hw&usqp=CAU" alt="Blog 2">
+            <div class="blog-content">
+                <h2>The Importance Of Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Facere molestias praesentium...</p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://www.livemint.com/lm-img/img/2024/06/18/600x338/laptoppppp_cleanup_1718705991705_1718706003867.PNG" alt="Blog 3">
+            <div class="blog-content">
+                <h2>The Importance Of Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Facere molestias praesentium...</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  -->
+<!--  -->
+
+
+<section class="services-section" id="service">
+    <h2 class="services-title">
+        My <span class="highlight">Services</span>
+    </h2>
+
+    <div class="services-grid">
+        <!-- Web Design -->
+        <div class="service-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="service-icon">✂️</div>
+                    <h3>Web Design</h3>
+                </div>
+                <div class="flip-card-back">
+                    <p>Modern and user-friendly designs for all devices.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Front End Development -->
+        <div class="service-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="service-icon">💻</div>
+                    <h3>Front End Development</h3>
+                </div>
+                <div class="flip-card-back">
+                    <p>Interactive and engaging UI development.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back End Development -->
+        <div class="service-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="service-icon">🛢️</div>
+                    <h3>Back End Development</h3>
+                </div>
+                <div class="flip-card-back">
+                    <p>Powerful and secure backend development.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Highlighted Card - Responsive Web Design -->
+        <div class="service-card highlight-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="service-icon">📱</div>
+                    <h3>Responsive Web Design</h3>
+                </div>
+                <div class="flip-card-back">
+                    <p>Optimized design for all screen sizes.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- E-Commerce Website -->
+        <div class="service-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="service-icon">🛒</div>
+                    <h3>E-Commerce Website</h3>
+                </div>
+                <div class="flip-card-back">
+                    <p>Build and optimize your online store.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Custom Website -->
+        <div class="service-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="service-icon">🔧</div>
+                    <h3>Custom Website</h3>
+                </div>
+                <div class="flip-card-back">
+                    <p>Tailor-made solutions for your business.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  -->
+
+
+
+<!--  -->
+<section class="project-section" id="project">
+    <div class="project_heading">
+        <h2>My <span class="highlight">Projects</span></h2>
+    </div>
+    
+    <div class="projects-grid">
+        <!-- E-Commerce Website -->
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlhHJgl_nITeOTy-0Nf7K_XPzXyFisGffxRA&s" alt="E-Commerce">
+                    <h4>E-Commerce Website</h4>
+                </div>
+                <div class="project-card-back">
+                    <p>A fully functional e-commerce platform with payment integration.</p>
+                    <div class="button-group">
+                        <a href="https://github.com/bipinsingh8052" class="btn btn-warning">Live Demo</a>
+                        <a href="https://github.com/bipinsingh8052" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Employee Management System -->
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="https://d6xcmfyh68wv8.cloudfront.net/learn-content/uploads/2023/11/Employee-Management-System.png" alt="Employee Management">
+                    <h4>Employee Management System</h4>
+                </div>
+                <div class="project-card-back">
+                    <p>Employee Management system using backend node.js</p>
+                    <div class="button-group">
+                        <a href="classy-torrone-0bd9d0.netlify.app" class="btn btn-warning">Live Demo</a>
+                        <a href="https://github.com/bipinsingh8052/Dashboard-in-MongoDB-and-React-" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instagram Clone -->
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="https://www.investopedia.com/thmb/osUOX4nP3Hw6mhEIX6IfZhaE8KQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/instagram-1789189_1920-f1e65b23a8694b028bf830ae05b8114e.jpg" alt="Instagram Clone">
+                    <h4>Instagram Home Page Clone</h4>
+                </div>
+                <div class="project-card-back">
+                    <p>Using JSON database for stories and comments functionality</p>
+                    <div class="button-group">
+                        <a href="https://instragram-icon.vercel.app/" class="btn btn-warning">Live Demo</a>
+                        <a href="https://github.com/bipinsingh8052/Insta_website" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login/Signup System -->
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="https://i.ytimg.com/vi/ROqsYIVCJ5Y/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCgqUlya94rVUvUdrJGZVFuvxvfIQ" alt="Auth System">
+                    <h4>Login & Signup System</h4>
+                </div>
+                <div class="project-card-back">
+                    <p>LocalStorage-based authentication system</p>
+                    <div class="button-group">
+                        <a href="https://login-and-sign-up-page-murex.vercel.app/r" class="btn btn-warning">Live Demo</a>
+                        <a href="https://github.com/bipinsingh8052/Login_And_SignUp_page_" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Library Management -->
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240711121009/Class-diagram-for-Library-Management-System-Design.webp" alt="Library Management">
+                    <h4>Library Management System</h4>
+                </div>
+                <div class="project-card-back">
+                    <p>Book issuing and management system</p>
+                    <div class="button-group">
+                        <a href="https://library-mangement-tawny.vercel.app/" class="btn btn-warning">Live Demo</a>
+                        <a href="https://github.com/bipinsingh8052/library_mangement" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Todo App -->
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="https://i.ytimg.com/vi/G0jO8kUrg-I/maxresdefault.jpg" alt="Todo App">
+                    <h4>Todo App (Redux)</h4>
+                </div>
+                <div class="project-card-back">
+                    <p>Todo list with Redux Toolkit state management</p>
+                    <div class="button-group">
+                        <a href="https://prismatic-pastelito-4fc2ce.netlify.app/" class="btn btn-warning">Live Demo</a>
+                        <a href="https://github.com/bipinsingh8052/Create-ToDo-list-using-Redux-ToolKit" class="btn btn-outline text-light">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add remaining projects following the same structure -->
+        <!-- Continue adding all other projects with the same card structure -->
+        
+    </div>
+</section>
+<!--  -->
+
+
+
+
+<!--  -->
+
+<section class="skills-section" id="skills">
+    <h2 class="skills-title">
+        My <span class="highlight">Skills</span>
+    </h2>
+
+    <div class="skills-container">
+        <!-- Frontend Skills -->
+        <div class="skills-box">
+            <h3>Front End Skill</h3>
+            
+            <div class="skill">
+                <span>HTML</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress: 95%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>CSS</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress: 85%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress: 90%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>ReactJs</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress: 80%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>jQuery</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress: 70%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Backend Skills -->
+        <div class="skills-box">
+            <h3>Back End Skill</h3>
+            
+            <div class="skill">
+                <span>C++</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress: 95%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>Node.js</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress: 85%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>DSA</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress: 80%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress: 90%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>MongoDB</span>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress: 75%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  -->
+
+
+
+<!--  -->
+
+<section class="contact-section" id="contact">
+    <h2 class="contact-title">
+        My <span class="highlight">Contact</span>
+    </h2>
+
+    <p class="contact-text">
+        Please fill out the form to contact me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday.
+    </p>
+
+    <div class="contact-container">
+        <!-- Contact Details -->
+        <div class="contact-details">
+            <div class="contact-info">
+                <div class="icon">📍</div>
+                <div>
+                    <h3>Address</h3>
+                    <p>Bhopal, Madhya Pradesh</p>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <div class="icon">📧</div>
+                <div>
+                    <h3>Email Us</h3>
+                    <p>bipinsingh8052@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <div class="icon">📞</div>
+                <div>
+                    <h3>Call Me</h3>
+                    <p>+91 8052056711</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+                <input type="tel" placeholder="Your Mobile Number" required>
+            </div>
+            <input type="email" placeholder="Your Email Address" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</section>
+
+<!--  -->
+
+    <!--  -->
+    <div style="height: 100px"><!-- Example content to enable scrolling --></div>
+
+    <!-- Footer -->
+    <footer class="footer text-light hide">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2024 All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        Developed by 
+                        <a href="/" class="text-warning text-decoration-none fw-bold">
+                            Bipinsingh.dev
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--  -->
+    <script>
+        function toggleNavbar() {
+            const navbarCollapse = document.getElementById('navbarNav');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            navbarCollapse.classList.toggle('show');
+            navbarToggler.classList.toggle('open');
+        }
+
+
+         // JavaScript for Role Text Animation
+         const roles = ["Full Stack Developer", "Front-end Developer", "Back-end Developer"];
+        let index = 0;
+        const roleTextElement = document.getElementById("role-text");
+
+        function updateRoleText() {
+            roleTextElement.textContent = `A ${roles[index]}`;
+            index = (index + 1) % roles.length;
+        }
+
+        // Change role text every 3 seconds
+        setInterval(updateRoleText, 3000);
+        updateRoleText(); // Initial cal
+
+
+        // JavaScript for Intersection Observer (Optional)
+        const aboutSection = document.querySelector('.about-section');
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+
+        if (aboutSection) {
+            observer.observe(aboutSection);
+        }
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+        const cards = document.querySelectorAll(".blog-card");
+
+        function checkVisibility() {
+            const triggerBottom = window.innerHeight * 0.85;
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                if (cardTop < triggerBottom) {
+                    card.classList.add("visible");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", checkVisibility);
+        checkVisibility();
+    });
+
+
+    window.addEventListener('scroll', function() {
+            const footer = document.querySelector('.footer');
+            const scrolledToBottom = 
+                window.innerHeight + window.scrollY >= document.body.offsetHeight;
+
+            if (scrolledToBottom) {
+                footer.classList.remove('hide');
+                footer.classList.add('show');
+            } else {
+                footer.classList.remove('show');
+                footer.classList.add('hide');
+            }
+        });
+
+    </script>
+
+</body>
+</html>
